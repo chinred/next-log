@@ -42,27 +42,18 @@ export const Highlight = ({children, color}) => (
 
 **마크다운**을 _JSX_와 같이 사용할 수 있습니다!
 
-### 탭
-<Tabs
-  groupId="operating-systems"
-  defaultValue="win"
-  values={[
-    {label: 'Windows', value: 'win'},
-    {label: 'macOS', value: 'mac'},
-  ]
-}>
-<TabItem value="win">복사하기는 Ctrl + C 단축키를 사용하세요.</TabItem>
-<TabItem value="mac">복사하기는 Command + C 단축키를 사용하세요.</TabItem>
-</Tabs>
+### 코드블록 라인 강조
+```jsx {1,4-6,11}
+import React from 'react';
 
-<Tabs
-  groupId="operating-systems"
-  defaultValue="win"
-  values={[
-    {label: 'Windows', value: 'win'},
-    {label: 'macOS', value: 'mac'},
-  ]
-}>
-<TabItem value="win">붙여넣기는 Ctrl + V 단축키를 사용하세요.</TabItem>
-<TabItem value="mac">붙여넣기는 Command + V 단축키를 사용하세요.</TabItem>
-</Tabs>
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```
+
