@@ -26,18 +26,17 @@ puts markdown.to_html
 ```
 
 ## JSX 사용하기
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-    {children}
-  </span>
-);
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-<Highlight color="#25c2a0">도큐사우루스 초록</Highlight>과 <Highlight color="#1877F2">페이스북 파랑</Highlight>은 내가 좋아하는 색입니다.
-
-**마크다운**을 _JSX_와 같이 사용할 수 있습니다!
+<Tabs
+  defaultValue="apple"
+  values={[
+    {label: 'Apple', value: 'apple'},
+    {label: 'Orange', value: 'orange'},
+    {label: 'Banana', value: 'banana'},
+  ]}>
+  <TabItem value="apple">이것은 사과입니다 🍎</TabItem>
+  <TabItem value="orange">이것은 오렌지입니다 🍊</TabItem>
+  <TabItem value="banana">이것은 바나나입니다 🍌</TabItem>
+</Tabs>;
