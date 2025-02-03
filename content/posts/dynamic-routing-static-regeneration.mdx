@@ -57,3 +57,12 @@ function MyComponent(props) {
 export default MyComponent;
 ```
 
+### 목차 단락
+import TOCInline from '@theme/TOCInline';
+
+<TOCInline
+  toc={
+    // Only show 3th and 5th top-level heading
+    [toc[2], toc[4]]
+  }
+/>;
