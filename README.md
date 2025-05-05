@@ -1,7 +1,7 @@
 # Next.js + Contentlayer
 
-A template with Next.js 13 app dir, Contentlayer, Tailwind CSS and dark mode.
+Next의 템플릿으로 제작한 블로그입니다 
 
-https://next-contentlayer.vercel.app
+간단하게 markdown언어 사용법을 적어놨습니다
 
 
